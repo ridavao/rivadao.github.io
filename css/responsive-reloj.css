@@ -20,7 +20,12 @@
 }
 
 @media (max-width: 490px){
+    #reloj{
+        margin-left: 13px;
+        width: 100%;
+    }
+
     #sidebar {
-        margin-right: 55px;
+        margin-right: 80px;
     }
 }
