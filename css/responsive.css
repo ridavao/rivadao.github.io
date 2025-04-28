@@ -9,10 +9,29 @@
         font-size: 25px;
         height: 160px;
     }
+
+    #sidebar h4{
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+    footer{
+        height: 90px;
+    }
+
 }
 
 @media(max-width: 490px){
     #logo{
         height: 220px;
+    }
+
+    #sidebar h4{
+        line-height: 20px;
+        font-size: 13px;
+    }
+
+    footer{
+        height: 90px;
     }
 }
