@@ -1,0 +1,18 @@
+body{
+    background: url('../img/fondo-arandanos.jpg') !important;
+    /*provoca que la imagen "no se acabe nunca" al scrollear */
+    background: fixed;
+}
+
+#logo{
+    background: #1f87c4;
+   
+}
+
+#menu ul li:hover{
+    background: #1f87c4;
+}
+
+.button-more{
+    background: #1f87c4;
+}

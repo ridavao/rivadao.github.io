@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto con JS-Jquery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--Tema por defecto de la pagina-->
+    <link id="theme" rel="stylesheet" href="css/green.css">
+
+    <!--Plugin para el Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!--Libreria para el formato de la hora (momentjs)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/locale/es-mx.min.js"></script>
+</head>
+
+<body>
+    <!--Cambiar tema de la web-->
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+
+    <!--contenedor global-->
+    <section id="global">
+        <!--Cabecera-->
+        <header>
+            <h1 id="logo">
+                Proyecto Javascript-Jquery
+            </h1>
+
+            <div class="clearfix"></div>
+
+            <!--Menu de navegacion-->
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="reloj.html">RELOJ</a></li>
+                    <li><a href="about.html">SOBRE MI</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Slider-->
+        <div id="slider">
+            <div class="bxslider">
+                <div><img src="img/manzana.jpg" title="Manzanas"/></div>
+                <div id="img-murtilla"><img src="img/murtilla.jpg" title="Murtilla"/></div>
+                <div><img src="img/arandanos.jpg" title="Arandanos"/></div>
+                <div id="img-changle"><img src="img/changle.jpg" title="Changle"/></div>
+                <div id="img-maqui"><img src="img/maqui.png" title="Maqui"/></div>
+            </div>
+        </div>
+
+        <!--Contenido-->
+        <section id="content">
+            <div id="post">
+                <!--Post desde el html
+                <article class="post">
+                    <h2>Titulo de Articulo</h2>
+                    <span class="date">Fecha de publicacion</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices dolor, ac
+                        sodales est. Nunc congue leo vel fermentum scelerisque. Fusce ac dolor egestas, consequat leo
+                        vel, dictum orci. Curabitur ultricies leo non nisl vestibulum, nec faucibus erat aliquam. Sed
+                        maximus egestas metus non dignissim. Nunc vulputate ex quis feugiat eleifend. Sed quis quam id
+                        quam sagittis elementum. Donec sagittis est lectus, non auctor sem blandit a. Nulla ornare
+                        varius orci, eget venenatis ex bibendum sit amet. Aenean et aliquet leo, et fermentum lorem.
+                        Maecenas et bibendum risus, vel semper augue. Duis tempus eleifend orci, quis sollicitudin justo
+                        pretium eu. Vivamus blandit congue mauris at tempor. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Fusce vehicula sem ac mauris rhoncus viverra.
+                    </p>
+                    <a href="" class="button-more">Leer más</a>
+                </article>
+                <article class="post">
+                    <h2>Titulo de Articulo</h2>
+                    <span class="date">Fecha de publicacion</span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices dolor, ac
+                        sodales est. Nunc congue leo vel fermentum scelerisque. Fusce ac dolor egestas, consequat leo
+                        vel, dictum orci. Curabitur ultricies leo non nisl vestibulum, nec faucibus erat aliquam. Sed
+                        maximus egestas metus non dignissim. Nunc vulputate ex quis feugiat eleifend. Sed quis quam id
+                        quam sagittis elementum. Donec sagittis est lectus, non auctor sem blandit a. Nulla ornare
+                        varius orci, eget venenatis ex bibendum sit amet. Aenean et aliquet leo, et fermentum lorem.
+                        Maecenas et bibendum risus, vel semper augue. Duis tempus eleifend orci, quis sollicitudin justo
+                        pretium eu. Vivamus blandit congue mauris at tempor. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Fusce vehicula sem ac mauris rhoncus viverra.
+                    </p>
+                    <a href="" class="button-more">Leer más</a>
+                </article>
+                -->
+                
+                <!--Los Post se cargan desde un JSON-->
+                
+            </div>
+
+            <aside id="sidebar">
+                <div id="about">
+                    <h4><span>¿Quién soy?</span></h4>
+                    <img src="img/foto-perfil.png" alt="">
+                    <p>
+                        Ricardo Valenzuela
+                        Informático, en busca de su primera experiencia laboral como desarrollador.
+                    </p>
+                </div>
+                <div id="login">
+                    <h4><span>Identificate</span></h4>
+                    <form action="" method="post">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="form_name">
+                        <label for="email">Correo</label>
+                        <input type="text" name="email">
+                        <label for="password">Contraseña</label>
+                        <input type="text" name="password">
+
+                        <input type="submit" value="Entrar">
+
+                    </form>
+                </div>
+            </aside>
+            <div class="clearfix"></div>
+        </section>
+
+    </section>
+
+    <!--Pie de pagina-->
+    <footer>
+        Sitio web de prueba, hecho con: HTML, CSS y Jquery. 
+
+        <!--Boton para subir al inicio de la pagina(hace scroll automatico)-->
+        <a href="#" class="subir">Ir arriba</a>
+    </footer>
+
+    
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>
