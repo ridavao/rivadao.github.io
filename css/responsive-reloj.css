@@ -1,0 +1,26 @@
+@media(max-width: 870px){
+    #reloj{
+        margin-left: 44px;
+        width: 100%;
+    }
+
+    #post .post{
+        width: 0%;
+    }
+    #sidebar {
+        margin-top: 25px;
+        margin-right: 160px;
+    }
+}
+
+@media (max-width: 760px) {
+    #sidebar {
+        margin-right: 110px;
+    }
+}
+
+@media (max-width: 490px){
+    #sidebar {
+        margin-right: 55px;
+    }
+}
